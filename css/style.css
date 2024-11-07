@@ -1,1 +1,15 @@
-
+html {
+  scroll-behavior: smooth;
+}
+.home-section {
+  padding-top: 80px;
+  background-color: #ffccea;
+}
+.home-section img {
+  width: 100%;
+  border: 35px solid #fcf596;
+  border-radius: 100px;
+}
+.home-1 {
+  background-color: white;
+}

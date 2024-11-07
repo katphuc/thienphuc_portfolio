@@ -9,5 +9,5 @@ function includeHTML(file, elementId) {
 
 // Gọi hàm chèn header
 document.addEventListener("DOMContentLoaded", function () {
-  includeHTML("include/header.html", "header-placeholder");
+  includeHTML("../include/header.html", "header-placeholder");
 });
