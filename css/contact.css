@@ -35,7 +35,7 @@
     flex-direction: column; /* Đổi thành cột trên thiết bị nhỏ hơn */
   }
   .contact-form iframe {
-    width: 385px;
+    width: 360px;
     height: 1000px;
     border: 0px;
   }

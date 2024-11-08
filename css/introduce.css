@@ -1,0 +1,116 @@
+.introduce-section {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background-color: #d4b5ff;
+}
+.introduce-section img {
+  width: 325px;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+.avtimg {
+  padding-left: 30px;
+}
+.introduce-section h2 {
+  color: #002795;
+  font-family: "MRCHMaverickGrotesk";
+  font-size: 70px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  /* padding-top: 100px; */
+}
+.info-introduce {
+  padding-top: 40px;
+}
+.info-introduce p {
+  font-family: "GanhType";
+  font-style: normal;
+  color: #002795;
+  font-size: 30px;
+}
+.link-social {
+  display: flex;
+  gap: 10px;
+}
+.link-social a i {
+  font-size: 40px;
+}
+.introduce-section img {
+  width: 500px;
+}
+.intro1 p {
+  color: #002795;
+  font-family: "GanhType";
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+.btn-intro {
+  background-color: #002795;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 20px;
+}
+.btn-intro:hover {
+  background-color: #7640c2;
+  color: white;
+}
+.intro1-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* Media query cho tablet (dưới 768px) */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column; /* Đổi thành cột trên thiết bị nhỏ hơn */
+  }
+  .introduce-section h2 {
+    font-size: 40px;
+  }
+  .introduce-section img {
+    width: 100%;
+  }
+  .info-introduce p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .link-social {
+    display: flex;
+    justify-content: center;
+  }
+  .link-social a i {
+    padding-top: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .intro1 p {
+    font-size: 18px;
+  }
+}
+
+/* Media query cho điện thoại (dưới 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Giảm kích thước chữ */
+  }
+
+  .container-fluid {
+    width: 100%; /* Đầy đủ chiều rộng trên thiết bị nhỏ */
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

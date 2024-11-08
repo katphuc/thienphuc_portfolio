@@ -25,3 +25,27 @@
   font-weight: 100;
   font-style: italic;
 }
+@font-face {
+  font-family: "GanhType";
+  src: url("../fonts/Ganh\ Type\ -\ Regular.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GanhType";
+  src: url("../fonts/Ganh\ Type\ -\ RegularItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GanhType";
+  src: url("../fonts/Ganh\ Type\ -\ Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GanhType";
+  src: url("../fonts/Ganh\ Type\ -\ ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}

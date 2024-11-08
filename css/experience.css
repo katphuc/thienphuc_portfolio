@@ -1,0 +1,194 @@
+.experience-section {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background-color: #d4b5ff;
+  text-align: center;
+}
+.experience-section h2 {
+  color: #002795;
+  font-family: "MRCHMaverickGrotesk";
+  font-weight: 900;
+  font-size: 60px;
+  font-style: normal;
+}
+.experience-section h3 {
+  color: #002795;
+  font-family: "GanhType";
+  font-weight: 900;
+}
+.experience-section p {
+  color: #002795;
+  font-family: "GanhType";
+  font-size: 30px;
+  font-weight: 100;
+}
+/* Cấu trúc timeline */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Line giữa timeline */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: black;
+}
+
+/* Một điểm (hình tròn) trên timeline */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 0;
+}
+
+.timeline-item-left {
+  left: 0;
+}
+
+.timeline-item-right {
+  left: 50%;
+}
+
+.timeline-item-content {
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Vị trí của các dấu thời gian */
+.timeline-item-left .timeline-item-content {
+  text-align: right;
+}
+
+.timeline-item-right .timeline-item-content {
+  text-align: left;
+}
+
+/* Hình tròn tại mỗi điểm */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: -7.5px;
+  background-color: #fff;
+  border: 3px solid #3498db;
+  border-radius: 50%;
+}
+/* Định dạng popup */
+/* Định dạng popup */
+.popup-detail {
+  display: none; /* Ẩn ban đầu */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-align: center;
+}
+.popup-detail h4 {
+  font-family: "GanhType";
+  font-weight: 900;
+  font-size: 30px;
+}
+.popup-detail p {
+  font-family: "GanhType";
+  font-weight: 900;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 50px;
+}
+.popup-detail a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Đóng popup */
+.close-popup {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #002795;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  background-color: #0056b3;
+}
+/* Media query cho tablet (dưới 768px) */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column; /* Đổi thành cột trên thiết bị nhỏ hơn */
+  }
+  .experience-section h2 {
+    font-size: 40px;
+  }
+  .experience-section p {
+    font-size: 20px;
+  }
+  .timeline-item-content h3 {
+    font-size: 20px;
+  }
+  .timeline-item-content p {
+    font-size: 20px;
+  }
+  .popup-detail {
+    width: 100%;
+  }
+  .popup-detail h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .popup-detail h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .popup-detail p {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Media query cho điện thoại (dưới 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Giảm kích thước chữ */
+  }
+
+  .container {
+    width: 100%; /* Đầy đủ chiều rộng trên thiết bị nhỏ */
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
