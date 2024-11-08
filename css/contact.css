@@ -1,17 +1,11 @@
-html {
-  scroll-behavior: smooth;
-}
-.home-section {
+.contact-section {
+  background: #d4b5ff;
   padding-top: 120px;
-  padding-bottom: 70px;
-  background-color: #d4b5ff;
 }
-.home-section img {
-  width: 100%;
-  border: 35px solid #fcf596;
-  border-radius: 100px;
+.contact-form {
+  text-align: center;
 }
-.home-1 h2 {
+.contact-explain h2 {
   color: #002795;
   font-family: "MRCHMaverickGrotesk";
   font-size: 70px;
@@ -19,12 +13,17 @@ html {
   font-style: italic;
   text-align: center;
 }
-.home-1 p {
+.contact-explain p {
   color: #002795;
   font-family: "MRCHMaverickGrotesk";
   font-size: 50px;
   font-style: normal;
   text-align: center;
+}
+.contact-form iframe {
+  width: 750px;
+  height: 1000px;
+  border: 0px;
 }
 /* Media query cho tablet (dưới 768px) */
 @media (max-width: 768px) {
@@ -34,6 +33,17 @@ html {
 
   .navbar {
     flex-direction: column; /* Đổi thành cột trên thiết bị nhỏ hơn */
+  }
+  .contact-form iframe {
+    width: 385px;
+    height: 1000px;
+    border: 0px;
+  }
+  .contact-explain p {
+    font-size: 35px;
+  }
+  .contact-explain h2 {
+    font-size: 45px;
   }
 }
 

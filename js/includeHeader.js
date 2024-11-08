@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("../include/header.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      const header = document.createElement("header");
+      header.innerHTML = data;
+      document.body.insertBefore(header, document.body.firstChild);
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+});

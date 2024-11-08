@@ -1,30 +1,42 @@
-html {
-  scroll-behavior: smooth;
-}
-.home-section {
+.cv-section {
   padding-top: 120px;
   padding-bottom: 70px;
   background-color: #d4b5ff;
+  text-align: center;
 }
-.home-section img {
-  width: 100%;
-  border: 35px solid #fcf596;
-  border-radius: 100px;
-}
-.home-1 h2 {
+.cv-section h2 {
   color: #002795;
   font-family: "MRCHMaverickGrotesk";
   font-size: 70px;
   font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+.cv-section h3 {
+  color: #002795;
+  font-family: "MRCHMaverickGrotesk";
+  font-size: 70px;
   font-style: italic;
   text-align: center;
 }
-.home-1 p {
-  color: #002795;
-  font-family: "MRCHMaverickGrotesk";
-  font-size: 50px;
-  font-style: normal;
-  text-align: center;
+.cv-section iframe {
+  width: 750px;
+  height: 1100px;
+}
+.btn {
+  background-color: #002795;
+  border-radius: 10px;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+.btn:hover {
+  background-color: #7640c2;
+  color: white;
+}
+.cv-explain {
+  display: none;
 }
 /* Media query cho tablet (dưới 768px) */
 @media (max-width: 768px) {
@@ -34,6 +46,18 @@ html {
 
   .navbar {
     flex-direction: column; /* Đổi thành cột trên thiết bị nhỏ hơn */
+  }
+  .cv-img {
+    display: none;
+  }
+  .cv-section h2 {
+    font-size: 50px;
+  }
+  .cv-section h3 {
+    font-size: 40px;
+  }
+  .cv-explain {
+    display: block;
   }
 }
 
@@ -51,5 +75,8 @@ html {
   .navbar {
     flex-direction: column;
     text-align: center;
+  }
+  .cv-img {
+    display: none;
   }
 }

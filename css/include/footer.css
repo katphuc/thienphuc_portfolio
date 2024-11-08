@@ -1,0 +1,99 @@
+.footer {
+  background: #ff83a9;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.footer img {
+  width: 100px;
+}
+.footer h4 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: "MRCHMaverickGrotesk";
+  font-style: normal;
+}
+.footer p {
+  width: 25%;
+  color: white;
+}
+.footer-logo-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+}
+.footer hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 5px 0;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #ffd154;
+}
+.footer ul li {
+  list-style: none;
+  text-align: center;
+}
+.footer .row > .col-lg-4 {
+  border-right: 1px solid #ccc; /* Thêm đường kẻ chia cột */
+  padding-right: 15px; /* Thêm khoảng cách cho bên phải các cột */
+}
+
+.footer .row > .col-lg-4:last-child {
+  border-right: none; /* Loại bỏ border ở cột cuối cùng */
+}
+/* Media query cho điện thoại (dưới 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer img {
+    width: 70px;
+  }
+  .footer-logo-title {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-logo-title h4 {
+    margin-left: 10px;
+  }
+
+  .footer p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .footer h4 {
+    font-size: 30px;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-direction: column; /* Xếp các cột theo chiều dọc */
+  }
+
+  .footer .row > .col-lg-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Giãn cách đều giữa các phần */
+    text-align: left; /* Đảm bảo text căn trái */
+    border-right: none; /* Loại bỏ border-right */
+    border-bottom: 0.5px solid lightgray; /* Thêm đường kẻ chia dưới các cột */
+    padding-bottom: 15px; /* Thêm khoảng cách dưới mỗi cột */
+    padding-right: 0; /* Đảm bảo không có khoảng cách ở bên phải */
+  }
+
+  /* Loại bỏ border-bottom ở cột cuối cùng trên mobile */
+  .footer .row > .col-lg-4:last-child {
+    border-bottom: none;
+  }
+}
